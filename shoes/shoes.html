@@ -145,9 +145,7 @@ body {
     const slides = document.querySelectorAll(".slide");
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
-    const auto = false;
-    let slideInterval;
-
+    
     const nextSlide = () => {
       const current = document.querySelector(".current");
       current.classList.remove("current");
@@ -167,8 +165,10 @@ body {
         slides[slides.length - 1].classList.add("current");
       }
     };
-nextButton.addEventListener("click", nextSlide);
-prevButton.addEventListener("click", prevSlide);
+    
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
+    
   </script>
 
 </body>
